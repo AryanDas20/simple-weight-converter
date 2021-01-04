@@ -16,15 +16,22 @@
     }
     .card{
         color:black;
+        z-index:1000;
     }
     #one{
         background-color:rgb(255, 102, 0);
+        z-index:-1000;
+        font-family:fantasy;
     }
     #two{
         background-color:rgb(0, 153, 255);
+        z-index:-1000;
+        font-family:fantasy;
     }   
     #three{
         background-color:rgb(99, 230, 23);
+        z-index:-1000;
+        font-family:fantasy;
     }
     .container{
         margin-right:40%;
@@ -36,6 +43,7 @@
     footer{
         background-color:rgb(214, 255, 31);
         color:rgb(37, 11, 71);
+        margin-top:600px;
     }
     #btns{
         margin-left:100px;
@@ -44,9 +52,28 @@
         text-align:center;
         align-items:center;
     }
+    #navigation{
+      position:fixed;
+      width:100%;
+      
+    }
+    #footertwo{
+      background-color:aqua;
+      margin-bottom:0%;
+      padding-bottom:0%;
+    }
+    a{
+      text-decoration:none;
+      font-family:cursive;
+      color:rgb(51, 40, 40);
+    }
+    h1{
+      font-family:monospace;
+    }
 </Style>
 </head>
 <body>
+  <div id="navigation">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,31 +81,34 @@
           </button>
           <a class="navbar-brand" href="#">
             <img src="https://myknowledgeguide.files.wordpress.com/2021/01/js-converter.png" alt="" width="40" height="30" class="d-inline-block align-top">
-            SWC
+            js.swc
           </a>
         >
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="https://aryandas.netlify.app/">main website</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+              
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            
             </form>
           </div>
         </div>
       </nav>
+    
+
+  </div>
     <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3">
+            <br>
+            <br>
+                            <br>
             <h1 class="display-4 text-center mb-3">Weight Converter</h1>
             <form>
               <div class="form-group">
@@ -121,17 +151,18 @@ document.getElementById("lbsInput").addEventListener("input", function(e) {
 });
 
 </script>
-<img id="img-align" src="https://myknowledgeguide.files.wordpress.com/2021/01/js-converter.png" style="width:80%;">
+
 <footer>
     <h1>Weight converter</h1>
-    <button id="btns" type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+    <a>CLICK THIS BUTTON TO SEE THE SOURCE CODE     </a><button   id="btns" type="button" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-      </svg>SOURCE CODE</button>
+      </svg><a href="https://github.com/AryanDas20/simple-weight-converter" target="_blank">   SOURCE CODE</a></button>
       <br>
-      <button id="btns" type="button" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+      <a>CLICK THIS BUTTON TO OPEN MY GIT HUB ACCOUNT</a><button id="btns" type="button" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-      </svg>GITHUB ACCOUNT.</button>
+      </svg><A href="https://github.com/AryanDas20" target="_blank">GIT HUB ACCOUNT</A></button>
       <Br>
+        <p id="footertwo">MAKED BY ARYAN DAS</p>
 </footer>
 </body>
 </html>
